@@ -3,23 +3,13 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Loader from "@/components/shared/Loader";
 import { useToast } from "@/components/ui/use-toast";
 
-import {
-  useCreateUserAccount,
-  useSignInAccount,
-} from "@/lib/react-query/queries";
+import { useCreateUserAccount, useSignInAccount } from "@/lib/react-query/queries";
 import { SignupValidation } from "@/lib/validation";
 import { useUserContext } from "@/context/AuthContext";
 
@@ -39,10 +29,8 @@ const SignupForm = () => {
   });
 
   // Queries
-  const { mutateAsync: createUserAccount, isLoading: isCreatingAccount } =
-    useCreateUserAccount();
-  const { mutateAsync: signInAccount, isLoading: isSigningInUser } =
-    useSignInAccount();
+  const { mutateAsync: createUserAccount, isLoading: isCreatingAccount } = useCreateUserAccount();
+  const { mutateAsync: signInAccount, isLoading: isSigningInUser } = useSignInAccount();
 
   // Handler
   const handleSignup = async (user: z.infer<typeof SignupValidation>) => {
@@ -50,8 +38,8 @@ const SignupForm = () => {
       const newUser = await createUserAccount(user);
 
       if (!newUser) {
-        toast({ title: "Sign up failed. Please try again." });
-
+        toast({ title: "Sign up failed. Please try again.", });
+        
         return;
       }
 
@@ -61,10 +49,10 @@ const SignupForm = () => {
       });
 
       if (!session) {
-        toast({ title: "Something went wrong. Please login your new account" });
-
+        toast({ title: "Something went wrong. Please login your new account", });
+        
         navigate("/sign-in");
-
+        
         return;
       }
 
@@ -75,8 +63,8 @@ const SignupForm = () => {
 
         navigate("/");
       } else {
-        toast({ title: "Login failed. Please try again." });
-
+        toast({ title: "Login failed. Please try again.", });
+        
         return;
       }
     } catch (error) {
@@ -87,9 +75,11 @@ const SignupForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
-        <img src="/assets/images/logo.png" alt="logo" />
+        <img src="/assets/images/logo.svg" alt="logo" />
 
-        <h2 className="h3-bold md:h2-bold">Create a new account</h2>
+        <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">
+          Create a new account
+        </h2>
         <p className="text-light-3 small-medium md:base-regular mt-2">
           To use snapgram, Please enter your details
         </p>
