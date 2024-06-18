@@ -1,5 +1,5 @@
 <div align="center">
-  
+  <h1>Social Bond</h1>
   <h3 align="center">A Social Media Application</h3>
   ## <a name="tech-stack">⚙️ Tech Stack</a>
   <div>
@@ -11,9 +11,16 @@
   </div>
 </div>
 
+<div>
+ 
+</div>
+
 ## <a name="features">🔋 Features</a>
 
 👉 **Authentication System**: A robust authentication system ensuring security and user privacy
+
+<img width="959" alt="social bond sign in" src="https://github.com/AyushAgarwal15/social-bond/assets/102687235/7b4c1f5f-76d3-436d-b6fd-4b3298b0fc7a">
+<img width="959" alt="social bond sign up" src="https://github.com/AyushAgarwal15/social-bond/assets/102687235/0c28ac88-f5e0-4f0b-b8f6-799832d0e61b">
 
 👉 **Explore Page**: Homepage for users to explore posts, with a featured section for top creators
 
