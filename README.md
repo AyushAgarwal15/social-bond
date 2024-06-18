@@ -1,6 +1,5 @@
 <div align="center">
-  <h1>Social Bond</h1>
-  <h3 align="center">A Social Media Application</h3>
+  <h1>Social Bond - A Social Media Application</h1>
   ## <a name="tech-stack">⚙️ Tech Stack</a>
   <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
