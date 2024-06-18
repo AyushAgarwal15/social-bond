@@ -11,18 +11,22 @@
   </div>
 </div>
 
-<div>
- 
-</div>
-
 ## <a name="features">🔋 Features</a>
 
 👉 **Authentication System**: A robust authentication system ensuring security and user privacy
 
 <img width="959" alt="social bond sign in" src="https://github.com/AyushAgarwal15/social-bond/assets/102687235/7b4c1f5f-76d3-436d-b6fd-4b3298b0fc7a">
+
 <img width="959" alt="social bond sign up" src="https://github.com/AyushAgarwal15/social-bond/assets/102687235/0c28ac88-f5e0-4f0b-b8f6-799832d0e61b">
 
-👉 **Explore Page**: Homepage for users to explore posts, with a featured section for top creators
+👉 **Home Page**: Home Page for users to explore posts, with a featured section for top creators
+
+<img width="959" alt="image" src="https://github.com/AyushAgarwal15/social-bond/assets/102687235/b436d91f-f391-4f66-bde1-3546f78cc2a0">
+
+👉 **Explore Page**: Explore Page for users to explore posts
+
+![image](https://github.com/AyushAgarwal15/social-bond/assets/102687235/97ad4930-13e4-477d-9643-f256e837e3dc)
+
 
 👉 **Like and Save Functionality**: Enable users to like and save posts, with dedicated pages for managing liked and saved content
 
